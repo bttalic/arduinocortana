@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="ArduinoApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ArduinoApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="debug" Margin="0,2,0,486" ></TextBlock>
+        <Button x:Name="OnButton" IsEnabled="False" Content="Turn On" HorizontalAlignment="Left" Click="OnButton_Click"></Button>
+        <Button x:Name="OffButton" IsEnabled="False" Content="Turn Off" HorizontalAlignment="Right" Click="OffButton_Click"></Button>
+    </Grid>
+</Page>

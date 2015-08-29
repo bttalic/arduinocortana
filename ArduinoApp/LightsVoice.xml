@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="ArduinoApp_en-us">
+    <CommandPrefix> Light </CommandPrefix>
+    <Example> Turn on/of green/red/blue light </Example>
+
+    <Command Name="toggleLight">
+      <Example> turn on green light  </Example>
+      <ListenFor> turn {action} {lightColor} light  </ListenFor>
+      <Feedback> turning {lightColor} light {action} </Feedback>
+      <Navigate/>
+    </Command>
+
+    <PhraseList Label="lightColor">
+      <Item> red </Item>
+      <Item> green </Item>
+      <Item> blue </Item>
+    </PhraseList>
+
+    <PhraseList Label="action">
+      <Item> on </Item>
+      <Item> off </Item>
+    </PhraseList>
+
+
+  </CommandSet>
+
+</VoiceCommands>
